@@ -4,18 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>INFO2180 Lab 4</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1>Avengers Character Search</h1>
-    <p id='resText'></p>
-    <script scr="app.js"></script>   
-    <form class="sHero" method="post" action="superheroes.php">
-        <input type="text" id="search_superheroes" type="text"
-        name="search" placeholder="Search">
-        <button onclick="getText()" type="submit"><i class="hSearch"></i>Search</button>
+    <form action="superheroes.php">
+        <div class ="search"
+         <h3>Search by Full name or alias</h3>
+        <input type="text" id="superhero" type="text"
+        name="superhero" placeholder="e.g. Captain America or Steve Rogers">
+        <button type="submit" id="btn">Search</button>
+        </div>
     </form>
+
+    <h3>RESULTS</h3>
+    <div class = "herolist">
+        <div class = "message"></div>
+        <div class = "heroname"></div>
+        <div class = "alias"></div>
+        <div class = "biography"></div>
+
+    </div>
     
      
 
